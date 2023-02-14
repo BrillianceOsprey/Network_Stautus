@@ -16,6 +16,7 @@ class MyApp extends StatefulWidget {
 class _MyAppState extends State<MyApp> {
   ConnectivityResult connectivityResult = ConnectivityResult.none;
   Connectivity connectivity = Connectivity();
+  // check in initstate
   @override
   void initState() {
     connectivity.onConnectivityChanged.listen((ConnectivityResult result) {
